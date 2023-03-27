@@ -1,0 +1,170 @@
+@import "../../global.scss";
+
+.mystories{
+    display: flex;
+    width:80%;
+    margin:0 auto;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+    h1{
+        font-size: 40px;
+        font-weight: bold;
+
+        span{
+            color:#15023a
+        }
+    }
+
+    .stories{
+        display: flex;
+        gap:15px;
+        margin-top: 40px;
+        height:400px;
+        
+        @include mobile{
+            flex-direction: column;
+            height:100%
+        }
+        
+        .aboutMe{
+            padding:20px;
+            background-color:rgb(249 249 249 );
+            max-width: 250px;
+            border-radius: 4px;
+
+            .aboutTop{
+
+                display: flex;
+                flex-direction: column;
+                gap:10px;
+
+                img{
+                   width: 40px;
+                   height:40px; 
+                   object-fit: cover;
+                   padding:10px;
+                   background-color:rgb(226, 225, 225);
+                   border-radius: 4px;
+
+                }
+
+                p{
+                    font-weight: bold;
+                    font-size: 16px;
+                    margin-top: 10px;
+                }
+            }
+
+            .aboutDesc{
+                padding-top: 15px;
+                font-size: 1rem;
+                line-height: 1.5rem;
+
+            }
+
+        }
+
+        .myHelp{
+            padding:20px;
+            background-color:rgb(249 249 249 );
+            max-width: 250px;
+            border-radius: 4px;
+
+            .aboutTop{
+
+                display: flex;
+                flex-direction: column;
+                gap:10px;
+
+                img{
+                   width: 40px;
+                   height:40px; 
+                   object-fit: cover;
+                   padding:10px;
+                   background-color:rgb(226, 225, 225);
+                   border-radius: 4px;
+
+                }
+
+                p{
+                    font-weight: bold;
+                    font-size: 16px;
+                    margin-top: 10px;
+                }
+            }
+
+
+            .myHelpDesc{
+                padding-top: 15px;
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+        }
+
+        .mission{
+            padding:20px;
+            background-color:rgb(249 249 249 );
+            max-width: 250px;
+            border-radius: 4px;
+
+            .aboutTop{
+
+                display: flex;
+                flex-direction: column;
+                gap:10px;
+
+                img{
+                   width: 40px;
+                   height:40px; 
+                   object-fit: cover;
+                   padding:10px;
+                   background-color:rgb(226, 225, 225);
+                   border-radius: 4px;
+
+                }
+
+                p{
+                    font-weight: bold;
+                    font-size: 16px;
+                    margin-top: 10px;
+                }
+            }
+
+
+            .missionDesc{
+                padding-top: 15px;
+                font-size: 1rem;
+                line-height: 1.5rem;
+
+            }
+
+        }
+    
+    }
+    .toMyStory{
+
+        @include mobile{
+            display: none;
+        }
+    
+        a{
+           position: absolute;
+           bottom:10px;
+   
+           img{
+  
+               width:30px;
+               animation: addBlink 2s infinite;
+   
+               @keyframes addBlink {
+                   100%{
+                       opacity:0
+                   }
+               }
+           }
+   
+        }
+   }
+}

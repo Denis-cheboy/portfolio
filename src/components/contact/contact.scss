@@ -1,0 +1,146 @@
+@import "../../global.scss";
+
+.contact{
+    background-color: white;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    .title{
+        h1{
+            text-align: center;
+            font-size: 45px;
+
+            span{
+                color: rgb(168 85 247 );
+
+            }
+        }
+    }
+
+    @include mobile{
+        min-height: calc(100vh - 70px);
+        
+
+    }
+
+    .flexWrapper{
+        background-color: white;
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        width:80%;
+        margin: 0 auto;;
+
+        @include mobile{
+            flex-direction: column;
+        }
+        .left{
+            overflow: hidden;
+    
+            img{
+                height: 100%;
+    
+            }
+    
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            gap:30px;
+            align-items: flex-start;
+            margin-top: 40px;
+    
+    
+            .firstContact{
+                text-decoration: none;
+                color:inherit;
+                padding:15px;
+                background-color:rgb(249 249 249 );
+                max-width: 300px;
+
+                @include mobile{
+                    max-width: 100%;
+                }
+
+    
+                .topFirstContact{
+                    margin: 10px 0px;
+                    display: flex;
+                    flex-direction: column;
+                    gap:20px;
+    
+                    p{
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 2rem;
+                    }
+                    
+                }
+                .bottomFirstContact{
+                    p{
+                        line-height: 1.5rem;
+                    }
+                }
+            }
+                
+    
+            .secondContact{
+                text-decoration: none;
+                color:inherit;
+                padding:15px;
+                background-color:rgb(249 249 249 );
+                max-width: 300px;
+
+                @include mobile{
+                    max-width: 100%;
+                }
+    
+                .topSecondContact{
+                    margin: 10px 0px;
+                    display: flex;
+                    flex-direction: column;
+                    gap:20px;
+    
+                    p{
+    
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 2rem;
+                    }
+                }
+    
+                .bottomSecondContact{
+                    p{
+                        line-height: 1.5rem;
+                    }
+                }
+    
+            }
+        }
+    }
+
+    .coypright{
+        position: absolute;
+        top:95%;
+        left:0;
+        // bottom:0px;
+        width:100%;
+        margin: 0 auto;
+        
+
+        p{
+            font-size: 12px;
+            text-align: center;
+            margin-top: 10px;
+
+            span{
+                color: rgb(168 85 247 );
+
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,65 @@
+@import "../../global.scss";
+.projectsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:80%;
+    margin:0 auto;
+    align-items: center;
+    position: relative;
+
+   
+    .header{
+        display: none;
+
+        @include mobile{
+            display: block;
+            font-size: 40px;
+            font-weight: bold;
+            margin: 30px 0px;
+
+            span{
+                color:#15023a
+            }
+        }
+    }
+
+    .projects{
+        display: flex;
+        gap:15px;
+        flex-wrap: wrap;
+        width:1000px;
+
+        @include mobile{
+            flex-direction: column;
+            width:80%;
+            flex-wrap: nowrap;
+
+        }
+
+      
+    }
+    .toMyStory{
+         @include mobile{
+            display: none;
+         }
+        a{
+           position: absolute;
+           bottom:10px;
+   
+           img{
+  
+               width:30px;
+               animation: addBlink 2s infinite;
+   
+               @keyframes addBlink {
+                   100%{
+                       opacity:0
+                   }
+               }
+           }
+   
+        }
+   }
+
+}

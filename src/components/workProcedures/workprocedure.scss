@@ -1,0 +1,176 @@
+@import "../../global.scss";
+.works{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #15023a;
+
+    @include mobile{
+        background-color: white;
+    }
+
+    .mobileProcedures{
+        display:none;
+
+        @include mobile{
+            display: block;
+            width:80%;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;  
+
+        }
+        .mobileProceduresTitle{
+            font-size: 20px;
+            font-weight: bold;
+            color:#15023a;
+            margin:40px 0px;
+            text-align: center;
+        }
+        .mobileProcedureServices{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap:30px;
+
+            .container{
+                width: 80%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+
+                .item{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    h1{
+                        font-size: 60px;
+                        font-weight: bold;
+                        margin:10px;
+                        color: rgb(168 85 247 );
+                    }
+    
+                    h2{
+                        font-size: 30px;
+                        font-weight: bold;
+                        margin:0px 10px;
+                    }
+    
+                    p{
+                        line-height: 1.5rem;
+                        margin:20px;
+                        font-size: 14px;
+                        color: rgb(75 85 99);
+                    }
+
+                }
+
+            }
+
+        }
+    }
+
+    .procedureTitle{
+        position: absolute;
+        top:0;
+        margin: 12px auto;
+        color:white;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .arrow{
+        height: 50px;
+        position: absolute;
+        cursor: pointer;
+
+        @include mobile{
+            display:none
+        }
+
+        &.left{
+            left:100px;
+            transform: rotateY(180deg);
+            cursor: pointer;
+        }
+
+        &.right{
+            right:100px;
+            cursor: pointer;
+
+        }
+    }
+    .toMyStory{
+    
+        a{
+           position: absolute;
+           bottom:10px;
+   
+           img{
+  
+               width:30px;
+               animation: addBlink 2s infinite;
+   
+               @keyframes addBlink {
+                   100%{
+                       opacity:0
+                   }
+               }
+           }
+   
+        }
+   }
+    .slider{
+        height: 350px;
+        position:absolute;
+        left:0;
+        display: flex;
+        transition: all 1s ease-out;
+
+        @include mobile{
+            display: none;
+        }
+
+        .container{
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+
+            .item{
+                width: 700px;
+                height: 100%;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+
+                h1{
+                    font-size: 60px;
+                    font-weight: bold;
+                    margin:10px;
+                    color: rgb(168 85 247 );
+                }
+
+                h2{
+                    font-size: 35px;
+                    font-weight: bold;
+                    margin:0px 10px;
+                }
+
+                p{
+                    line-height: 1.5rem;
+                    margin:20px;
+                    font-size: 14px;
+                    color: rgb(75 85 99);
+                }
+
+            }
+            
+        }
+    }
+}
